@@ -311,7 +311,7 @@ std::pair<boost::shared_ptr<fostlib::mime>, int> fostgres::response_csj(
     } else if (req.method() == "PUT") {
         return put(config, m, req);
     } else if (req.method() == "POST") {
-        return put(cnx, config, m, req);
+        return put(config, m, req);
     } else if (req.method() == "DELETE") {
         return del(config, m, req);
     } else {
